@@ -1,0 +1,102 @@
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 8px 14px;
+    font-weight: 400px;
+    border: 1px solid transparent;
+    border-radius: $btn-border-radius;
+    color: black;
+    @include hover-background($btn-bg-color);
+}
+
+.btn.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn.btn-md {
+    padding: 10px 16px;
+    font-size: 1em;
+}
+
+.btn.btn-lg {
+    padding: 10px 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.btn.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn.btn-default {
+    @include hover-background(white);
+
+    border-color: $border-default;
+}
+
+.btn.btn-primary {
+    @include hover-background($primary-color);
+    color: $btn-text-color;
+}
+
+.btn.btn-success {
+    @include hover-background($success-color);
+    color: $btn-text-color;
+}
+
+.btn.btn-info {
+    @include hover-background($info-color);
+    color: $btn-text-color;
+    border-color: $border-info;
+}
+
+.btn.btn-warning {
+    @include hover-background($warning-color);
+    color: $btn-text-color;
+    border-color: $border-warning;
+}
+
+.btn.btn-error {
+    @include hover-background($error-color);
+    color: $btn-text-color;
+    border-color: $border-error;
+}
+
+.btn.btn-link {
+    @include hover-background($default-color);
+    color: $btn-text-link-color;
+    border-color: $border-link;
+}
+
+.btn-primary.active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    background-color: $primary-active-color;
+    border-color: $border-primary-active;
+}
+
+.btn-default.active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    color: $btn-text-color-default;
+    background-color: $default-active-color;
+    border-color: $border-default-active;
+}
+
+:disabled:disabled:hover {
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+}
+
+a.btn.disabled {
+    pointer-events: none;
+} 

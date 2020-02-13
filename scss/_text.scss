@@ -1,0 +1,48 @@
+p {
+    padding: 8px 0;
+}
+
+.text-muted {
+    @include message($muted-color);
+}
+
+.text-primary {
+    @include message($primary-color);
+}
+
+.text-success {
+    @include message($success-color);
+}
+
+.text-info {
+    @include message($info-color);
+}
+
+.text-warning {
+    @include message($warning-color);
+}
+
+.text-danger {
+    @include message($danger-color);
+}
+
+.bg-primary {
+    @include message($white-text-color);
+    @include message-bg($primary-color);
+}
+
+.bg-success {
+    @include message-bg($success-color);
+}
+
+.bg-info {
+    @include message-bg($info-color);
+}
+
+.bg-warning {
+    @include message-bg($warning-color);
+}
+
+.bg-danger {
+    @include message-bg($danger-color);
+}

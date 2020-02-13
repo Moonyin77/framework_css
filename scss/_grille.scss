@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: calc(100% - 20rem);
+    margin: 0 auto;
+}
+    
+    $columns : 12;
+    
+    @for $i from 1 through $columns
+    {
+        .col-#{$i}
+        {
+            flex: 0 0 100% / $columns * $i
+        }
+        .col-offset-#{$i}
+        {
+            margin-left: 100% / $columns * $i
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container{width: 100%;}
+        @for $i from 1 through $columns
+        {
+            .col-xs-#{$i}
+            {
+                flex: 0 0 100% / $columns * $i
+            }
+            .col-offset-#{$i}
+            {
+                margin-left: 100% / $columns * $i
+            }   
+        }       
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        
+            @for $i from 1 through $columns
+            {
+                .col-sm-#{$i}
+                {
+                    flex: 0 0 100% / $columns * $i
+                }
+                .col-offset-#{$i}
+                {
+                    margin-left: 100% / $columns * $i
+                }
+            }   
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        @for $i from 1 through $columns
+        {
+            .col-md-#{$i}
+            {
+                flex: 0 0 100% / $columns * $i
+            }
+            .col-offset-#{$i}
+            {
+                margin-left: 100% / $columns * $i
+            }
+        }    
+    }
+
+    @media screen and (min-width: 1200px) { 
+        @for $i from 1 through $columns
+        {
+            .col-lg-#{$i}
+            {
+                flex: 0 0 100% / $columns * $i
+            }
+            .col-offset-#{$i}
+            {
+                    margin-left: 100% / $columns * $i
+                }
+            } 
+    }
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+div[class^="col-"] {/* Selectionne toutes les colonnes */
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}

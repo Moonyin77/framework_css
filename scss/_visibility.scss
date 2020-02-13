@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+    .visible-xs, .hidden-lg, .hidden-sm, .hidden-md {
+        visibility: visible;
+        width: 25%;
+    }
+    .hidden-xs, .visible-lg, .visible-sm, .visible-md {
+        display: none;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .visible-sm, .hidden-lg, .hidden-md, .hidden-xs {
+        visibility: visible;
+        width: 25%;
+    }
+    .hidden-sm, .visible-lg, .visible-md, .visible-xs {
+        display: none;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .visible-md, .hidden-lg, .hidden-sm, .hidden-xs {
+        visibility: visible;
+        width: 25%;
+    }
+    .hidden-md, .visible-lg, .visible-sm, .visible-xs {
+        display: none;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .visible-lg, .hidden-md, .hidden-sm, .hidden-xs {
+        visibility: visible;
+        width: 25%;
+    }
+    .hidden-lg, .visible-md, .visible-sm, .visible-xs {
+        display: none;
+        width: 25%;
+    }
+}
+
+

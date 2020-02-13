@@ -1,0 +1,70 @@
+//---COLOR---//
+$default-color: #fff;//White
+$primary-color: #337ab7;//Blue
+$success-color: #5ebc41;//Green
+$error-color: #bb2828;//Red
+$info-color: #5bc0de;//Cyan
+$warning-color: #f0ad4e;//Orange
+$danger-color: #a94442;//Red/Brown
+$alert-color: #a94442;
+$muted-color: #777;
+$primary-active-color:#286090;
+$default-active-color:#e6e6e6;
+
+//---BORDER-COLOR---//
+
+$border-default: #ccc;
+$border-info: #46b8da;
+$border-warning: #eea236;
+$border-error: #d43f3a;
+$border-danger: #ebccd1;
+$border-link: transparent;
+$border-primary-active: #122b40;
+$border-default-active:#adadad;  
+$border-success: #d6e9c6;  
+
+//---BUTTON---//
+$btn-border-radius: 4px;
+$btn-bg-color: $default-color;
+$btn-text-color: #fff;
+$btn-text-color-default: black;
+$btn-text-link-color:#337ab7;
+
+//---TEXT COLOR---//
+$white-text-color: #fff;
+
+//---BACKGROUND COLOR---//
+// $bg-primary: #337ab7;
+// $bg-success: #dff0d8;
+// $bg-info: #d9edf7;
+// $bg-warning: #fcf8e3;
+// $bg-danger:  #f2dede;
+
+
+//--MEDIAQUERIES--//
+// Small tablets and large smartphones (landscape view)
+$screen-xs-min: 576px;
+ 
+// Small tablets (portrait view)
+$screen-sm-min: 768px;
+ 
+// Tablets and small desktops
+$screen-md-min: 992px;
+ 
+// Large tablets and desktops
+$screen-lg-min: 1200px;
+
+//---ALERTE---//
+$alert-padding: 15px;
+$alert-margin: 20px;
+$alert-radius: 4px;
+$alert-link-weight: 700;
+
+$color-alert-link: #2b542c;
+
+$message-types: (
+  error : #b94a48,
+  warn  : #c09853,
+  valid : #468847,
+  info  : #3a87ad
+) !default;

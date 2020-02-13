@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+.alert-success {
+    @include message($success-color);
+    @include message-bg-alert($success-color);
+}
+
+.alert-info {
+    @include message($info-color);
+    @include message-bg-alert($info-color);
+}
+
+.alert-warning {
+    @include message($warning-color);
+    @include message-bg-alert($warning-color);
+}
+
+.alert-danger {
+    @include message($danger-color);
+    @include message-bg-alert($danger-color);
+}
+
+.close {
+    float: right;
+}

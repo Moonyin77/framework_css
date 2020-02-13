@@ -1,0 +1,23 @@
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-responsive.img-rounded {
+    border-radius: 6px;
+}
+
+.img-responsive.img-circle {
+    border-radius: 50%;
+}
+
+.img-responsive.img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+}
+
+.img-responsive.img-blur {
+    filter: blur(4px);
+}
